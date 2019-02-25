@@ -14,7 +14,8 @@ public class HelloController {
 
 			new Image(1, "Treehouse of Horror V", "https://www.imdb.com/title/tt0096697/mediaviewer/rm3842005760"),
 
-			new Image(2, "snow 2010", "/images/snow2010.JPG"),
+			new Image(2, "snow 2010", "/images/snow2010.JPG")
+		)
 
 		return images;
 
