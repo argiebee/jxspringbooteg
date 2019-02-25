@@ -1,7 +1,13 @@
 package com.argiebee.dev.jxspringbooteg;
 
-import org.springframework.web.bind.annotation.RestController;
+import java.util.Arrays;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import com.eureka.image.entities.Image;
+
 
 @RestController
 public class HelloController {
