@@ -14,7 +14,7 @@ public class HelloController {
 
     @RequestMapping(value = "/snow2010", method = RequestMethod.GET, produces = MediaType.IMAGE_JPEG_VALUE)
     public ResponseEntity<byte[]> getImage() throws IOException {
-        var imgFile = new ClassPathResource("image/snow2010.JPG");
+        ClassPathResource imgFile = new ClassPathResource("image/snow2010.JPG");
         byte[] bytes = StreamUtils.copyToByteArray(imgFile.getInputStream());
         return ResponseEntity
                 .ok()
